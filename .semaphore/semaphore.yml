@@ -37,9 +37,6 @@ blocks:
       prologue:
         commands:
           - sem-service start mysql
-          - checkout
-          - cache restore
-          - pip install -r requirements.txt --cache-dir .pip_cache
       jobs:
         - name: Model Test
           commands:
