@@ -21,7 +21,7 @@ blocks:
         - name: pip
           commands:
             - checkout
-            - cache restore
+            - 'cache restore '
             - pip download --cache-dir .pip_cache -r requirements.txt
             - cache store
   - name: Run Code Analysis
